@@ -1,0 +1,187 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-none border-bottom">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6">
+                  <h5>Create New Invoice</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2">
+              <img class="w-100" src="https://www.google.com/logos/doodles/2025/womens-cricket-world-cup-2025-begins-6753651837110857.3-l.webp" alt="logo">
+            </div>
+            <div class="col-5">
+              <div class="mb-3">
+                <label for="invoiceNumber" class="form-label">Invoice Number</label>
+                <input type="text" class="form-control" id="invoiceNumber" placeholder="ABC-1234-56789">
+              </div>
+              <div class="mb-3">
+                <label for="invoiceNumber" class="form-label">Invoice Issue Date</label>
+                <input type="text" class="form-control" id="invoiceNumber" placeholder="31-10-1900">
+              </div>
+              <div class="mb-3">
+                <label for="invoiceNumber" class="form-label">Currency</label>
+                <input type="text" class="form-control" id="invoiceNumber" placeholder="INR">
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="mb-3">
+                <label for="invoiceNumber" class="form-label">Payment Terms</label>
+                <input type="text" class="form-control" id="invoiceNumber" placeholder="NET30">
+              </div>
+              <div class="mb-3">
+                <label for="invoiceNumber" class="form-label">Due Date</label>
+                <input type="text" class="form-control" id="invoiceNumber" placeholder="31-10-1900">
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <h6 id="invoice-from-title">Invoice From</h6>
+              <label class="small" for="invoice-from-title">Your Business Address</label>
+              <div class="form-floating">
+                <textarea class="form-control" id="invoice-from-address" style="height: 100px"></textarea>
+                <label for="invoice-from-address">
+                  #123, ABC Building
+                  XYZ Street,
+                  PQR District,
+                </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <h6 id="invoice-to-title">Invoice From</h6>
+              <label class="small" for="invoice-to-title">Client Business Address</label>
+              <div class="form-floating">
+                <textarea class="form-control" id="invoice-to-address" style="height: 100px"></textarea>
+                <label for="invoice-to-address">
+                  #123, ABC Building
+                  XYZ Street,
+                  PQR District,
+                </label>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12">
+              <h6>Items</h6>
+            </div>
+            <div class="col-12">
+              <table class="table">
+                <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item Description</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Rate</th>
+                  <th scope="col">Tax %</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="mb-3 pt-2">
+                      1
+                    </div>
+                  </th>
+                  <td>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="item description">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="item quantity" value="1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="0">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="5">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="₹ 0.00">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="mb-3 pt-2" style="cursor: pointer">
+                      <i class="bi bi-trash text-danger"></i>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="7" class="text-start text-primary pt-3 pb-3" style="cursor: pointer">
+                    <i class="bi bi-plus-lg"></i> Add Item
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-5 offset-7">
+              <div class="row">
+                <div class="col-6">Subtotal:</div>
+                <div class="col-6 text-end">₹ 0.00</div>
+              </div>
+              <div class="row">
+                <div class="col-6">SGST:</div>
+                <div class="col-6 text-end">₹ 0.00</div>
+              </div>
+              <div class="row">
+                <div class="col-6">CGST:</div>
+                <div class="col-6 text-end">₹ 0.00</div>
+              </div>
+              <div class="row">
+                <div class="col-6">Discount:</div>
+                <div class="col-6 text-end">₹ 0.00</div>
+              </div>
+              <div class="row">
+                <div class="col-6">Total:</div>
+                <div class="col-6 text-end">₹ 0.00</div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12">
+              <h6>Invoice Notes:</h6>
+              <div>
+                <textarea class="form-control" placeholder="Invoice Notes" style="height: 100px"></textarea>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <h6>Terms &amp; Conditions</h6>
+              <div>
+                <textarea class="form-control" placeholder="Invoice Notes" style="height: 100px"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer bg-none border-top">
+          <div class="row">
+            <div class="col-12 text-end">
+              <button type="button" class="btn btn-light">Cancel</button>
+              <button type="button" class="btn btn-dark" (click)="printComponent()">Create Invoice</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
